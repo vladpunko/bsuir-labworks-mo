@@ -1,0 +1,14 @@
+*.bin binary merge=ours
+*.mat binary merge=ours
+*.zip binary merge=ours
+
+*.csv text
+*.in tetx
+*.ipynb text
+*.md text
+*.pxd text
+*.py text
+*.pyx text
+*.sh text
+*.txt text
+*.yml tetx
