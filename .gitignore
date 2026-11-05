@@ -17,6 +17,9 @@ wheels/
 *.so
 .~
 
+!.editorconfig
 !.gitattributes
 !.gitignore
 !.gitkeep
+!.mailmap
+!.python-version
