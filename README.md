@@ -1,21 +1,23 @@
-### Лабораторные работы по курсу: машинное обучение
+# Лабораторные работы по машинному обучению
 
 [![Made With Python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org)
-[![Сommon Size](https://img.shields.io/github/repo-size/vladpunko/bsuir-labworks-mo)](https://github.com/vladpunko/bsuir-labworks-mo)
+[![Repository size](https://img.shields.io/github/repo-size/vladpunko/bsuir-labworks-mo)](https://github.com/vladpunko/bsuir-labworks-mo)
 
-Реализация лабораторных работ с дополнительными оптимизациями по предмету машинного обучения в магистратуре кафедры Информатики в Белорусском Государственном Университете Информатики и Радиоэлектроники.
+Лабораторные работы по машинному обучению с дополнительными оптимизациями, выполненные в магистратуре кафедры информатики БГУИР.
 
-### Установка и запуск
+[Задания к лабораторным работам](ASSIGNMENTS.pdf).
 
-Для управления окружением и зависимостями используется [uv](https://docs.astral.sh/uv/getting-started/installation/).
+## Установка и запуск
+
+Для установки зависимостей и запуска ноутбуков используется [uv](https://docs.astral.sh/uv/getting-started/installation/).
 
 ```bash
-# Клонирование данного репозитория.
+# Клонирование репозитория.
 git clone https://github.com/vladpunko/bsuir-labworks-mo && cd ./bsuir-labworks-mo
 
 # Создание виртуального окружения и установка зависимостей.
-uv sync
+uv sync --locked
 
-# Запуск сервера для разработки.
-uv run jupyter notebook --notebook-dir="$PWD"
+# Запуск Jupyter Notebook.
+uv run jupyter notebook --notebook-dir="${PWD}"
 ```
