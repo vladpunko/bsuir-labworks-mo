@@ -1,0 +1,26 @@
+[project]
+name = "bsuir-labworks-mo"
+version = "0.0.0"
+description = "Лабораторные работы по машинному обучению"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.9",
+    "nltk>=3.10.4",
+    "notebook-environments>=0.8.14",
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+    "scipy>=1.15.3",
+    "tabulate>=0.10.0",
+    "tqdm>=4.70.1",
+]
+
+[tool.uv]
+package = false
+# Минимальные версии с исправлениями уязвимостей.
+constraint-dependencies = [
+    "pillow>=13.0.0",
+    "tornado>=6.6",
+]

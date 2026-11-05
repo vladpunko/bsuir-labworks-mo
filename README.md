@@ -7,16 +7,15 @@
 
 ### Установка и запуск
 
+Для управления окружением и зависимостями используется [uv](https://docs.astral.sh/uv/getting-started/installation/).
+
 ```bash
 # Клонирование данного репозитория.
 git clone https://github.com/vladpunko/bsuir-labworks-mo && cd ./bsuir-labworks-mo
 
-# Активация виртуального окружения.
-python3 -m venv .venv && source ./.venv/bin/activate
-
-# Установка зависимостей репозитория.
-pip3 install -r requirements.txt
+# Создание виртуального окружения и установка зависимостей.
+uv sync
 
 # Запуск сервера для разработки.
-jupyter notebook --notebook-dir="$PWD"
+uv run jupyter notebook --notebook-dir="$PWD"
 ```
